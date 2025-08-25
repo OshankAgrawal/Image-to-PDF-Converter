@@ -1,0 +1,122 @@
+/* ===== Global Styles ===== */
+body {
+  font-family: Arial, sans-serif; /* Default font for the entire page */
+  background: #f5f6fa; /* Light gray background for the page */
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Container for Main Card ===== */
+.container {
+  max-width: 800px; /* Restricts the width for better readability */
+  margin: 30px auto; /* Centers the container with vertical spacing */
+  background: #fff; /* White background for the main card */
+  padding: 20px;
+  border-radius: 12px; /* Rounded corners for a soft look */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+/* ===== Heading Styling ===== */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* ===== Drag & Drop Upload Area ===== */
+.upload-area {
+  border: 2px dashed #ccc; /* Dashed border for a drop zone feel */
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* ===== Button Base Style ===== */
+.btn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* ===== Button Variants ===== */
+.btn.primary { background: #4CAF50; color: white; }    /* Green for primary action */
+.btn.secondary { background: #2196F3; color: white; } /* Blue for secondary action */
+.btn.danger { background: #f44336; color: white; }    /* Red for delete/clear */
+.btn.success {
+  background: #28a745; /* Green for success */
+  color: white;
+  width: 100%; /* Full width for the Generate PDF button */
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+/* ===== Preview List ===== */
+.preview-list {
+  list-style: none; /* Removes default list bullets */
+  padding: 0;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  gap: 10px; /* Space between preview items */
+}
+
+/* ===== Individual Preview Item ===== */
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Spread elements evenly */
+  gap: 12px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: #fafafa; /* Light background for preview cards */
+}
+
+/* Thumbnail Image inside Preview */
+.item img.thumb {
+  width: 72px;
+  height: 72px;
+  object-fit: cover; /* Ensures the image fits without distortion */
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* File Info Section (Name & Size) */
+.item .info {
+  flex: 1; /* Takes remaining space */
+  display: flex;
+  flex-direction: column; /* Stack name & size vertically */
+}
+
+/* Action Buttons for Each Item */
+.item .actions {
+  display: flex;
+  flex-direction: column; /* Stack Rotate & Remove buttons */
+  gap: 6px;
+}
+
+/* ===== Responsive Enhancements for Mobile ===== */
+.item {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping on small screens */
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #f8f9fa; /* Slightly different tone for card */
+}
+
+.item img.thumb {
+  width: 80px; /* Slightly larger thumbnail for better clarity */
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.item .actions {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
